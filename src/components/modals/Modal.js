@@ -4,7 +4,7 @@ import './index.css';
 const modal = () => {
   return (
     <div className>
-      
+        
     </div>
   )
 }
