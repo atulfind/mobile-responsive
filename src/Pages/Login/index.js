@@ -4,7 +4,6 @@ import { useHistory, useLocation } from 'react-router-dom';
 
 const Login = () => {
 
-  const location =  useLocation();
   const history =  useHistory();
 
   const loginHandler = () => {
