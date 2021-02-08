@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mobile-responsive/static/css/main.cf1ed555.chunk.css",
-    "main.js": "/mobile-responsive/static/js/main.1100538d.chunk.js",
-    "main.js.map": "/mobile-responsive/static/js/main.1100538d.chunk.js.map",
-    "runtime-main.js": "/mobile-responsive/static/js/runtime-main.eb744bcc.js",
-    "runtime-main.js.map": "/mobile-responsive/static/js/runtime-main.eb744bcc.js.map",
-    "static/js/2.ea8fe4ad.chunk.js": "/mobile-responsive/static/js/2.ea8fe4ad.chunk.js",
-    "static/js/2.ea8fe4ad.chunk.js.map": "/mobile-responsive/static/js/2.ea8fe4ad.chunk.js.map",
-    "static/js/3.10ebf35e.chunk.js": "/mobile-responsive/static/js/3.10ebf35e.chunk.js",
-    "static/js/3.10ebf35e.chunk.js.map": "/mobile-responsive/static/js/3.10ebf35e.chunk.js.map",
+    "main.css": "/mobile-responsive/static/css/main.94f8a6eb.chunk.css",
+    "main.js": "/mobile-responsive/static/js/main.b0cd8531.chunk.js",
+    "main.js.map": "/mobile-responsive/static/js/main.b0cd8531.chunk.js.map",
+    "runtime-main.js": "/mobile-responsive/static/js/runtime-main.4c1f1f7a.js",
+    "runtime-main.js.map": "/mobile-responsive/static/js/runtime-main.4c1f1f7a.js.map",
+    "static/js/2.cc9ca447.chunk.js": "/mobile-responsive/static/js/2.cc9ca447.chunk.js",
+    "static/js/2.cc9ca447.chunk.js.map": "/mobile-responsive/static/js/2.cc9ca447.chunk.js.map",
+    "static/js/3.cba0c3b9.chunk.js": "/mobile-responsive/static/js/3.cba0c3b9.chunk.js",
+    "static/js/3.cba0c3b9.chunk.js.map": "/mobile-responsive/static/js/3.cba0c3b9.chunk.js.map",
     "index.html": "/mobile-responsive/index.html",
-    "static/css/main.cf1ed555.chunk.css.map": "/mobile-responsive/static/css/main.cf1ed555.chunk.css.map",
-    "static/js/2.ea8fe4ad.chunk.js.LICENSE.txt": "/mobile-responsive/static/js/2.ea8fe4ad.chunk.js.LICENSE.txt",
+    "static/css/main.94f8a6eb.chunk.css.map": "/mobile-responsive/static/css/main.94f8a6eb.chunk.css.map",
+    "static/js/2.cc9ca447.chunk.js.LICENSE.txt": "/mobile-responsive/static/js/2.cc9ca447.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/mobile-responsive/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb744bcc.js",
-    "static/js/2.ea8fe4ad.chunk.js",
-    "static/css/main.cf1ed555.chunk.css",
-    "static/js/main.1100538d.chunk.js"
+    "static/js/runtime-main.4c1f1f7a.js",
+    "static/js/2.cc9ca447.chunk.js",
+    "static/css/main.94f8a6eb.chunk.css",
+    "static/js/main.b0cd8531.chunk.js"
   ]
 }
