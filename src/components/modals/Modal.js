@@ -1,22 +1,36 @@
 import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import './index.css';
+
+const pushState = (obj, url) => {
+  window.history.pushState(obj, '', url);
+}
+
+const onPopState = (handler) => {
+  window.onpopstate = handler;
+};
 
 const Modal = ({closeModal}) => {
 
-  useEffect(() => {
-    window.addEventListener('beforeunload', function (e) {
-      closeModal();
-      // Cancel the event
-      e.preventDefault(); // If you prevent default behavior in Mozilla Firefox prompt will always be shown
-      // Chrome requires returnValue to be set
-      e.returnValue = '';
-    });
-  }, [closeModal])
+useEffect(() => {
+  
+  pushState({myId: 1}, '/')
+
+  onPopState((event) => {
+    closeModal()
+  });
+
+}, [closeModal])
 
   return (
-    <div className>
-      this is modal
+   <>
+    <div className="modal">
+      <button className="modal-button" onClick={closeModal}>
+        close modal
+      </button>
     </div>
+    <div className="backdrop"></div>
+   </>
   )
 }
 

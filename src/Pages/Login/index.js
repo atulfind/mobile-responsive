@@ -10,6 +10,8 @@ const Login = () => {
     history.replace('/');
   }
 
+  console.log('ogin')
+
   return (
     <div className="container">
       <h4>Login Page</h4>
