@@ -1,36 +1,39 @@
 import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 import './index.css';
 
-const pushState = (obj, url) => {
-  window.history.pushState(obj, '', url);
-}
 
-const onPopState = (handler) => {
-  window.onpopstate = handler;
-};
+const Modal = ({ closeModal }) => {
 
-const Modal = ({closeModal}) => {
+  const neutralizeBack = callback => {
+    window.history.pushState(null, "", window.location.href);
+    window.onpopstate = () => {
+      window.history.pushState(null, "", window.location.href);
+      callback();
+    };
+  };
 
-useEffect(() => {
-  
-  pushState({myId: 1}, '/')
+  const revivalBack = () => {
+    window.onpopstate = undefined;
+    window.history.back();
+  };
 
-  onPopState((event) => {
-    closeModal()
-  });
-
-}, [closeModal])
+  useEffect(() => {
+    neutralizeBack(closeModal);
+    return () => {
+      revivalBack()
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
-   <>
-    <div className="modal">
-      <button className="modal-button" onClick={closeModal}>
-        close modal
+    <>
+      <div className="modal">
+        <button className="modal-button" onClick={closeModal}>
+          close modal
       </button>
-    </div>
-    <div className="backdrop"></div>
-   </>
+      </div>
+      <div className="backdrop"></div>
+    </>
   )
 }
 

@@ -7,7 +7,7 @@ const Login = () => {
   const history =  useHistory();
 
   const loginHandler = () => {
-    history.replace('/');
+    history.push('/');
   }
 
   console.log('ogin')
@@ -16,6 +16,7 @@ const Login = () => {
     <div className="container">
       <h4>Login Page</h4>
       <button onClick={loginHandler}>Login</button>
+      <input type="text" placeholder="Heloo" />
     </div>
   )
 }
